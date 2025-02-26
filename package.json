@@ -1,12 +1,16 @@
 {
   "name": "vue_saw",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build:button": "vue-cli-service build --target lib --name DesignButton --formats umd --dest  dist/button --report ./src/components/button.js"
   },
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
@@ -39,5 +43,12 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "this is ui component",
+  "main": "babel.config.js",
+  "keywords": [
+    "vue"
+  ],
+  "author": "saw_kayw_myint",
+  "license": "ISC"
 }
